@@ -1,59 +1,101 @@
+/* Base Styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
-
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
 body {
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1.6rem;
 }
 
-header {
-  text-align: center;
-  padding: 2em;
-  background-color: #333;
-  color: #fff;
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--second-bg-color);
+}
+.header h1 {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.nav-links a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #ffffff;
 }
 
-header h1 {
-  font-size: 2.5em;
+/* Section Styling */
+.section {
+    padding: 4rem 3rem;
+    text-align: center;
+}
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--main-color);
 }
 
-section {
-  padding: 1.5em;
-  margin: 1em auto;
-  width: 90%;
-  max-width: 800px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Home Section */
+.home p {
+    font-size: 1.8rem;
+    color: var(--text-color);
 }
 
-section h2 {
-  color: #333;
-  margin-bottom: 0.5em;
-  font-size: 1.5em;
-  border-bottom: 2px solid #333;
-  padding-bottom: 0.3em;
+/* Education & Project Items */
+.education-item, .project-item {
+    background: var(--second-bg-color);
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 600px;
 }
 
-ul {
-  list-style-type: none;
-  margin-top: 1em;
+/* Skills Section */
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+.skills li {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
 }
 
-li {
-  padding: 0.3em 0;
+/* Contact */
+.social-links a {
+    margin: 0 1rem;
+    color: var(--main-color);
+    font-size: 1.6rem;
+    text-decoration: none;
 }
 
-a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+/* Footer */
+.footer {
+    padding: 2rem;
+    text-align: center;
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    font-size: 1.4rem;
 }
