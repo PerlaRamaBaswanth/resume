@@ -1,101 +1,64 @@
-/* Base Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
 }
+
 :root {
-    --bg-color: #081b29;
-    --second-bg-color: #112e42;
-    --text-color: #ededed;
-    --main-color: #00abf0;
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
 }
+
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    line-height: 1.6;
     font-size: 1.6rem;
+    padding: 2rem;
 }
 
-/* Header */
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    background-color: var(--second-bg-color);
+header {
+    text-align: center;
+    margin-bottom: 2rem;
 }
-.header h1 {
-    font-size: 3rem;
+
+header h1 {
+    font-size: 2.5rem;
     color: var(--main-color);
+}
+
+section {
+    margin: 2rem 0;
+}
+
+section h2 {
+    color: var(--main-color);
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
-.nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-}
-.nav-links a {
-    color: var(--main-color);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-.nav-links a:hover {
-    color: #ffffff;
-}
 
-/* Section Styling */
-.section {
-    padding: 4rem 3rem;
-    text-align: center;
-}
-.section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--main-color);
-}
-
-/* Home Section */
-.home p {
-    font-size: 1.8rem;
-    color: var(--text-color);
-}
-
-/* Education & Project Items */
-.education-item, .project-item {
-    background: var(--second-bg-color);
-    margin: 1rem auto;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: left;
-    max-width: 600px;
-}
-
-/* Skills Section */
-.skills ul {
-    list-style: none;
-    padding: 0;
-}
-.skills li {
-    font-size: 1.8rem;
-    margin: 0.5rem 0;
-}
-
-/* Contact */
-.social-links a {
-    margin: 0 1rem;
-    color: var(--main-color);
+section p, section ul li {
     font-size: 1.6rem;
-    text-decoration: none;
+    color: var(--text-color);
 }
 
-/* Footer */
-.footer {
-    padding: 2rem;
+ul {
+    list-style-type: none;
+}
+
+footer {
     text-align: center;
+    padding: 1rem;
     background: var(--second-bg-color);
-    color: var(--text-color);
+}
+
+footer p {
     font-size: 1.4rem;
+    color: var(--text-color);
 }
