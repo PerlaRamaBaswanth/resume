@@ -1,76 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perla Rama Baswanth Resume</title> 
-  <link rel="stylesheet" href="style.css"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perla Rama Baswanth | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <header>
-    <h1>Perla Rama Baswanth</h1>
-    <p>Email: baswanthperla99@gmail.com | Phone: +91 9391554481 | DOB: 05 MAR 2005</p>
-  </header>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Data Structures</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>SQL</li>
-      <li>C, C++</li>
-    </ul>
-  </section>
+    <!-- Header -->
+    <header class="header">
+        <h1>Perla Rama Baswanth</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li><strong>B. Tech, CSE</strong> - SRM Institute of Science and Technology (2022 - Ongoing) | Tiruchirappalli | CGPA: 9.47</li>
-      <li><strong>Intermediate, MPC</strong> - Aditya Junior College (2020 - 2022) | Kakinada | Percentage: 92.5%</li>
-      <li><strong>SSC</strong> - Pragati English Medium School (2019 - 2020) | Jagapathinagaram | Percentage: 95.33%</li>
-    </ul>
-  </section>
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Email: baswanthperla99@gmail.com | Phone: +91 9391554481</p>
+            <p>Date of Birth: 05 MAR 2005</p>
+        </div>
+    </section>
 
-  <section>
-    <h2>Languages Known</h2>
-    <ul>
-      <li>Telugu</li>
-      <li>Hindi</li>
-      <li>English</li>
-    </ul>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Achieved certifications in Java and SQL on HackerRank, showcasing strong problem-solving skills and coding proficiency. Driven by a passion for technology and a commitment to delivering high-quality, scalable solutions.</p>
+        </div>
+    </section>
 
-  <section>
-    <h2>Links</h2>
-    <ul>
-      <li><a href="https://github.com/PerlaRamaBaswanth" target="_blank">GitHub</a></li>
-      <li><a href="https://linkedin.com/in/perla-rama-baswanth" target="_blank">LinkedIn</a></li>
-      <li><a href="https://www.hackerrank.com/baswanthperla99" target="_blank">HackerRank</a></li>
-    </ul>
-  </section>
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>B. Tech, CSE</h3>
+                <p>SRM Institute of Science and Technology, Tiruchirappalli (2022 - Ongoing)</p>
+                <p>CGPA: 9.47</p>
+            </div>
+            <div class="education-item">
+                <h3>Intermediate, MPC</h3>
+                <p>Aditya Junior College, Kakinada (2020 - 2022)</p>
+                <p>Percentage: 92.5%</p>
+            </div>
+            <div class="education-item">
+                <h3>SSC</h3>
+                <p>Pragati English Medium School, Jagapathinagaram (2019 - 2020)</p>
+                <p>Percentage: 95.33%</p>
+            </div>
+        </div>
+    </section>
 
-  <section>
-    <h2>Summary</h2>
-    <p>Achieved certifications in Java and SQL on HackerRank, showcasing strong problem-solving skills and coding proficiency. Driven by a passion for technology and a commitment to delivering high-quality, scalable solutions.</p>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Data Structures</li>
+                <li>HTML & CSS</li>
+                <li>SQL</li>
+                <li>C, C++</li>
+            </ul>
+        </div>
+    </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Library Management System:</strong> System with "Admin" and "User" roles, allowing admins to manage stock and users to add books to their collections.</li>
-      <li><strong>Electricity Billing Management System:</strong> Robust system for utility companies and consumers to manage electricity billing.</li>
-      <li><strong>DDoS Attack Detection and Mitigation:</strong> Utilizes the CatBoost classifier to detect botnet-based DDoS attacks with 98% accuracy, providing fast, efficient protection for network resources.</li>
-    </ul>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Library Management System</h3>
+                <p>This system provides two main roles, "Admin" and "User," each with specific functionalities. Admins can add books to the library's stock, while users can add books to their personal collection.</p>
+            </div>
+            <div class="project-item">
+                <h3>Electricity Billing Management System</h3>
+                <p>This project aims to develop a robust EBMS that caters to the needs of both utility companies and consumers.</p>
+            </div>
+            <div class="project-item">
+                <h3>DDoS Detection using CatBoost</h3>
+                <p>This project develops a DDoS detection application for SDN using the CatBoost classifier, identifying and blocking malicious traffic with high accuracy.</p>
+            </div>
+        </div>
+    </section>
 
-  <section>
-    <h2>Achievements</h2>
-    <ul>
-      <li>HackerRank Java</li>
-      <li>HackerRank SQL</li>
-      <li>Cisco Networking Basics</li>
-    </ul>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: baswanthperla99@gmail.com</p>
+            <p>Phone: +91 9391554481</p>
+            <p>Languages Known: Telugu, Hindi, English</p>
+            <div class="social-links">
+                <a href="https://github.com/PerlaRamaBaswanth">GitHub</a>
+                <a href="https://linkedin.com/in/perla-rama-baswanth">LinkedIn</a>
+                <a href="https://hackerrank.com/baswanthperla99">HackerRank</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Perla Rama Baswanth. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
